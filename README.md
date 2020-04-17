@@ -1,5 +1,6 @@
 
 ## 16 April 2020 ##
+
 ### Installing annovar ###
 
 
@@ -28,3 +29,20 @@ $source /home/sam/.bashrc
 enjoy annovar
 
  
+### Installing GATK tools ###
+Using anaconda to install gatk
+
+do 
+$conda search gatk
+
+look for your version to install
+
+Install with the command below 
+n$ conda install -c bioconda gatk=3.8
+
+Download gatk from their website on your pc
+
+unzip the gatk folder and cd into it
+
+the gatk local .jar file with the gatk executable file (highlighted in blue) to your home bin
+cp file name ~/bin/s
