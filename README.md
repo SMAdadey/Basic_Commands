@@ -46,3 +46,33 @@ unzip the gatk folder and cd into it
 
 the gatk local .jar file with the gatk executable file (highlighted in blue) to your home bin
 cp file name ~/bin/s
+
+
+
+
+
+## 18 April 2020 ##
+### Uploading to git hub ###
+
+The first thing to do after creating the repository online is to clone it to your HD
+$git clone link
+
+check status with 
+$git status
+
+Addding online, use 
+$git add 
+
+Commit will send to the intermediate cloud 
+$git commit -m "message"
+
+
+you need to push now to the microsoft cloud 
+$git push -u origin master 
+
+
+
+
+onne line command 
+$ for i in README.md; do git add $i; git commit -m "first commit"; git push -u origin master; done
+
