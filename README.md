@@ -76,3 +76,7 @@ $git push -u origin master
 onne line command 
 $ for i in README.md; do git add $i; git commit -m "first commit"; git push -u origin master; done
 
+
+
+Editing vcf files (using txt file to select them and look for a location and print genotype at that location 
+for i in $(cat 2n3per_family.txt); do echo $i $(bcftools view --threads 10 -v snps -r chr13:20763294 "${i}.hard-filtered.gvcf.gz" | bcftools query -f '[ %GT]\n'); done
