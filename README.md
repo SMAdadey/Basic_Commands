@@ -52,37 +52,6 @@ source /home/sam/.bashrc
 enjoy annovar
 
  
-### Installing GATK tools ###
-Using anaconda to install gatk
-
-do 
-
-```
-conda search gatk
-```
-
-
-look for your version to install
-
-Install with the command below 
-
-```
- conda install -c bioconda gatk=3.8
-```
-
-
-Download gatk from their website on your pc
-
-unzip the gatk folder and cd into it
-
-the gatk local .jar file with the gatk executable file (highlighted in blue) to your home bin
-
-```
-cp file name ~/bin/s
-```
-
-
-
 
 ## 18 April 2020 ##
 ### Uploading to git hub ###
@@ -137,3 +106,32 @@ Editing vcf files (using txt file to select them and look for a location and pri
 for i in $(cat 2n3per_family.txt); do echo $i $(bcftools view --threads 10 -v snps -r chr13:20763294 "${i}.hard-filtered.gvcf.gz" | bcftools query -f '[ %GT]\n'); done
 ```
 
+
+### Installing GATK tools ###
+Using anaconda to install gatk
+
+do 
+
+```
+conda search gatk
+```
+
+
+look for your version to install
+
+Install with the command below 
+
+```
+ conda install -c bioconda gatk=3.8
+```
+
+
+Download gatk from their website on your pc
+
+unzip the gatk folder and cd into it
+
+the gatk local .jar file with the gatk executable file (highlighted in blue) to your home bin
+
+```
+cp file name ~/bin/s
+```
