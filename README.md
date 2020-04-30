@@ -4,7 +4,7 @@
 ### Installing annovar ###
 
 
-Go to the open bioinformatics site [http://annovar.openbioinformatics.org/en/latest/user-guide/startup/]
+[Go to the open bioinformatics site](http://annovar.openbioinformatics.org/en/latest/user-guide/startup/)
 
 Register for the annovar software and the link for the download will be sent to your email. 
 Download the software to your computer 
