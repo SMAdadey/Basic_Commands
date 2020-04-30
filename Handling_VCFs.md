@@ -1,5 +1,11 @@
 ##  20 April 2020 ##
 
+## selecting specific location's genotype ##
+
+```
+bcftools view -v snps -r chr13:20763294 all_samples_gh_20200422_joint_call.gvcf.gz | bcftools query -H -f '[ %GT]\n' | less -S
+```
+
 Merge using bcftools 
 ```
  bcftools_mergeCommand=merge --threads 10 -m all -Oz -o r143w-merge-joint.vcf.gz r143w-positive-jointcall-chr13-updated2-phased.vcf.gz r143w-negative-jointcall-chr13-updated2-phased.vcf.gz;
@@ -82,9 +88,11 @@ echo "bcftools view -v snps -k -m2 -M2 -S samples-ids.txt -r \$(cat rs-positions
 
 
 
-Editing vcf files (using txt file to select them and look for a location and print genotype at that location 
-$(cat smaple_list_to_select.txt); do echo $i $(bcftools view --threads 10 -v snps -r chr13:20763294 "${i}.hard-filtered.gvcf.gz" | bcftools query -f '[ %GT]\n'); done
+## Editing vcf files (using txt file to select them and look for a location and print genotype at that location ##
 
+``` 
+for i in $(cat smaple_list_to_select.txt); do echo $i $(bcftools view --threads 10 -v snps -r chr13:20763294 "${i}.hard-filtered.gvcf.gz" | bcftools query -f '[ %GT]\n'); done
+```
 
 
 
