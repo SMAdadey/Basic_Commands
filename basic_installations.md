@@ -15,6 +15,8 @@ conda install -c bioconda beagle=5.1
 ```
 
 enjoy beagle 
+
+
 ### Installing GATK tools ###
 Using anaconda to install gatk
 
