@@ -109,6 +109,8 @@ for i in $(cat 2n3per_family.txt); do echo $i $(bcftools view --threads 10 -v sn
 ```
 bcftools view -v snps -r chr13:20763294 all_samples_gh_20200422_joint_call.gvcf.gz | bcftools query -H -f '[ %GT]\n' | less -S
 ```
+
+Sed programming is used above
 R is for a file with region yet a specific format is required
 
 
