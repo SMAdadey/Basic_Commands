@@ -2,6 +2,7 @@
 #!/usr/bin/env bash
 
 ##Uploading data to github
+##today
 
 file=$1
 msg=$2
